@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zockanは、漫画単行本の続刊・発売予定を確認する、開発中のブラウザー拡張機能です。現在は公開・配布していません。">
+  <meta name="color-scheme" content="light">
+  <title>Zockan — 開発中</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; color: #252922; background: #f5f5ef; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: clamp(20px, 5vw, 72px); }
+    main { width: min(100%, 920px); overflow: hidden; background: #fffef9; border: 1px solid #dcdfd4; border-radius: 28px; box-shadow: 0 24px 80px #25311a08; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px clamp(24px, 6vw, 64px); border-bottom: 1px solid #e6e8df; }
+    .mark { display: flex; align-items: flex-end; gap: 5px; height: 25px; }
+    .mark span { display: block; width: 8px; height: 23px; border-radius: 2px; background: #2f4938; }
+    .mark span:nth-child(2) { height: 19px; background: #b7c7ad; }
+    .mark span:nth-child(3) { height: 25px; background: #d8a36a; transform: rotate(-10deg); margin-left: 2px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 8px 13px; border: 1px solid #dde5d5; border-radius: 999px; color: #36513b; background: #f0f4eb; font-size: 13px; font-weight: 600; letter-spacing: .05em; }
+    .status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #71895d; }
+    .intro { padding: clamp(44px, 8vw, 88px) clamp(24px, 6vw, 64px) clamp(36px, 6vw, 64px); }
+    h1 { margin: 0 0 26px; font-size: clamp(60px, 12vw, 112px); font-weight: 650; line-height: 1; letter-spacing: -.065em; }
+    .lead { margin: 0; max-width: 650px; font-size: clamp(20px, 3vw, 28px); line-height: 1.9; font-weight: 500; letter-spacing: .015em; text-wrap: pretty; }
+    .note { margin: 0 clamp(24px, 6vw, 64px) clamp(28px, 5vw, 48px); padding-top: 25px; border-top: 1px solid #e6e8df; color: #61665c; font-size: 14px; line-height: 2; }
+    .note p { margin: 0; }
+    .note p + p { margin-top: 5px; }
+    @media (max-width: 480px) { main { border-radius: 20px; } .top { padding-top: 20px; padding-bottom: 20px; } .lead { font-size: 20px; } }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="app-name">
+    <header class="top">
+      <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <span class="status">開発中</span>
+    </header>
+    <section class="intro" aria-labelledby="app-name">
+      <h1 id="app-name">Zockan</h1>
+      <p class="lead">漫画単行本の続刊・発売予定を確認する<br>ブラウザー拡張機能</p>
+    </section>
+    <footer class="note">
+      <p>Zockanは現在開発中です。現在は公開・配布していません。</p>
+      <p>機能や提供開始時期は未確定です。</p>
+    </footer>
+  </main>
+</body>
+</html>
